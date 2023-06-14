@@ -4,20 +4,32 @@ const skills_box = document.querySelector('.skills_box');
 square.classList.remove('square-transition');
 
 // Create the observer, same as before:
-const observerrr = new IntersectionObserver(entries => {
+const observer_1 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       first_col_anim.classList.add('square-transition');
-      second_col_anim.classList.add('square-transition');
       return;
     }
 
     first_col_anim.classList.remove('square-transition');
+  });
+});
+
+observer_1.observe(document.querySelector('.main2_firstcol'));
+
+
+const observer_2 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      second_col_anim.classList.add('square-transition');
+      return;
+    }
+
     second_col_anim.classList.remove('square-transition');
   });
 });
 
-observerrr.observe(document.querySelector('.main2'));
+observer_2.observe(document.querySelector('.main2_secondcol'));
 
 
 const observerrr_skills = new IntersectionObserver(entries => {
