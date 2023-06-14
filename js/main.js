@@ -27,11 +27,16 @@ const prev = document.getElementsByClassName("prev");
 const next = document.getElementsByClassName("next");
 const wrap = document.querySelector(".wrap");
 const content5_p = document.querySelectorAll(".content5_p");
+const lab = document.getElementsByClassName('label')
 
 
-console.log(content5_p[1]);
-
-
+console.log(content5_p);
+console.log(lab)
+/* for(let i=0; i<lab.length; i++){
+    console.log(lab[1])
+    lab[i].style.color="red";
+}
+ */
 window.onresize = screen;
 window.onload = screen;
 
@@ -86,8 +91,9 @@ mode.addEventListener("click", (event)=>{
         content_p[i].style.color="#fefefe";
     }
 
-    for(let i=0; i<label.length; i++){
-        label[i].classList.toggle("label_dark")
+    for(let i=0; i<lab.length; i++){
+        lab[i].classList.toggle("label_dark")
+        /* lab[i].style.color="#fefefe"; */
     }
 
     for(let i=0; i<input.length; i++){
@@ -101,14 +107,20 @@ mode.addEventListener("click", (event)=>{
     prev[0].classList.toggle("cont_dark");
     next[0].classList.toggle("cont_dark");
     textarea[0].classList.toggle("label_dark")
-    button[0].classList.toggle("button_dark");
+    button.classList.toggle("button_dark");
     
     nav.classList.toggle("nav_dark");
     nav.classList.toggle("nav_dark2");
 
     for(let i=0; i<content5_p.length; i++){
-        content5_p[i].style.color="rgb(177, 174, 174)";
+        content5_p[i].style.color="red";
+        /* content5_p[i].classList.toggle("content5_p_dark") */
     }
+
+    /* for(let i=0; i<lab.length; i++){
+        console.log(lab[1])
+        lab[i].style.color="red";
+    } */
     
    
     
