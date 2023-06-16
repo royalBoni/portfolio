@@ -9,7 +9,6 @@ const main4_content = main4.querySelector("#main4_content");
 const main4_col1 = main4.querySelector("#m4col1");
 const main4_col2 = main4.querySelector("#m4col2");
 const main4_col3 = main4.querySelector("#m4col3");
-const P = main4_content.getElementsByTagName("P");
 const content = main4_content.getElementsByClassName("content");
 const main5 = html.querySelector("#main5");
 const main5_col1 = main5.querySelector("#main5_col1")
@@ -30,8 +29,6 @@ const content5_p = document.querySelectorAll(".content5_p");
 const lab = document.getElementsByClassName('label')
 
 
-console.log(content5_p);
-console.log(lab)
 /* for(let i=0; i<lab.length; i++){
     console.log(lab[1])
     lab[i].style.color="red";
@@ -74,13 +71,9 @@ mode.addEventListener("click", (event)=>{
     main4_col1.classList.toggle("main4_col_dark");
     main4_col2.classList.toggle("main4_col_dark");
     main4_col3.classList.toggle("main4_col_dark");
-    
-    for(let i=0; i<P.length; i++){
-        P[i].style.color="#fefefe";
-    }
 
     for(let i=0; i<content.length; i++){
-        content[i].style.color="rgb(153, 149, 149)";
+        content[i].classList.toggle('main4_content_dark');
     }
 
     for(let i=0; i<content_h3.length; i++){
@@ -109,8 +102,7 @@ mode.addEventListener("click", (event)=>{
     textarea[0].classList.toggle("label_dark")
     button.classList.toggle("button_dark");
     
-    nav.classList.toggle("nav_dark");
-    nav.classList.toggle("nav_dark2");
+   
 
     for(let i=0; i<content5_p.length; i++){
         content5_p[i].style.color="red";

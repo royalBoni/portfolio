@@ -406,10 +406,11 @@ img{
 .main4_col .row_header{
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: rgb(153, 149, 149);
 }
 
 .main4_col .content{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /*  CLIENT TESTIMONIALS */
@@ -711,6 +712,10 @@ img{
     background-color: rgb(17, 17, 17);
 }
 
+.main4_content_dark{
+    color: rgb(153, 149, 149);
+}
+
 .button_dark{
     background-color: black;
     color: #fefefe;
@@ -829,7 +834,7 @@ img{
         top: 80px;
         left: 0;
         right: 0;
-        background-color: whitesmoke;
+        background-color: rgb(153, 149, 149);
         transition: 0.5s;
         overflow: hidden;
     }
@@ -845,14 +850,18 @@ img{
         opacity: 0;
     }
 
-   
-
-    
     .nav-bar ul li a{
         
         margin-bottom: 12px;
+        color: black;
 
     }
+    
+    .nav-bar ul li a:hover{
+        color: rgb(153, 149, 149);
+        background-color: black;
+    }
+    
 
 
     /* EVENT FROM THE JAVASCRIPT AFTER THE HAMBURGER CLICK */
@@ -871,7 +880,7 @@ img{
 
     /* DARK MODE */
     .nav_dark{
-        background-color: black;
+        background-color: rgb(17, 17, 17); 
     }
 
 
@@ -989,24 +998,31 @@ img{
     }
 
     header{
-        position: sticky;
+        /* position: sticky;
         top: 39rem;
         background-color: rgb(236, 233, 233);
         padding: 1rem;
-        border-radius: 50px;
+        border-radius: 50px; */
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        background-color: rgb(236, 233, 233);
+        margin-inline: auto;
+        left: 0;
+        right: 0;
+        padding: 0 0.5rem;
     }
 
-    .header_dark{
-        background-color: rgb(7, 7, 7);
-        
+    .header_dark{ 
+        background-color: rgb(17, 17, 17);    
     }
+
     .nav-bar{
         height:0;
         position: absolute;
         top: -430px;
         left: 0;
         right: 0;
-        background-color: whitesmoke;
         transition: 0.5s;
         overflow: hidden;
     }
@@ -1143,14 +1159,13 @@ img{
 .main4_col .row_header{
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: black;
 }
 
 .main4_col .content{
-    font-size: 1.8rem;
+    font-size: 1rem;
     width: 100%;
     justify-content: center;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
 }
 
 /* DARKMODE IN THIS BREAKPOINT */
@@ -1158,9 +1173,9 @@ img{
     background-color: rgb(17, 17, 17);
 }
 
-.label_dark{
+/* .label_dark{
     background-color: rgb(223, 14, 14);
-}
+} */
 
 
 .main5{
