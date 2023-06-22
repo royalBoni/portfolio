@@ -65,6 +65,7 @@ mode.addEventListener("click", (event)=>{
     html.classList.toggle("html_dark");
     header.classList.toggle("header_dark");
     fig.classList.toggle("figure_dark");
+    mode.classList.toggle("mode-dark")
     
 
     for(let i=0; i<a.length; i++){
